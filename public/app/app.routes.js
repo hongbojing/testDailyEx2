@@ -5,7 +5,7 @@ angular.module('app.routes', ['ngRoute'])
 
         // route for the home page
         .when('/', {
-            templateUrl: 'app/views/pages.html'
+            templateUrl: 'app/views/pages/home.html'
         })
 
         // log in page
@@ -34,7 +34,7 @@ angular.module('app.routes', ['ngRoute'])
             templateUrl: 'app/views/pages/users/single.html',
             controller: 'userEditController',
             controllerAs: 'user'
-        })
+        });
 
     $locationProvider.html5Mode(true);
 });

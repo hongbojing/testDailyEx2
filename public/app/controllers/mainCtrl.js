@@ -18,7 +18,7 @@ angular.module('mainCtrl', [])
     });
 
     // function to handle login form
-    vm.doLogion = function () {
+    vm.doLogin = function () {
         vm.processing = true;
 
         // clear the error

@@ -10,7 +10,7 @@ angular.module('userCtrl', ['userService'])
     User.all()
         .success(function (data) {
             // when all the users come back, remove the processing variable
-            vm.processing.false;
+            vm.processing = false;
 
             // bind the users that come back to vm.users
             vm.users = data;
