@@ -82,7 +82,7 @@ module.exports = function (app, express) {
         console.log('Somebody just came to our app');
 
         // check header or url parameters or post parameters for token
-        var token = req.body.token || req.query.token || req.header['x-access-token'];
+        var token = req.body.token || req.query.token || req.headers['x-access-token'];
 
         // decode token
         if(token) {

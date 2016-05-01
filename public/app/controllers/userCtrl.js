@@ -17,7 +17,7 @@ angular.module('userCtrl', ['userService'])
         });
 
     // function to delete a user
-    vm.deleteuser = function (id) {
+    vm.deleteUser = function (id) {
         vm.processing = true;
         User.delete(id)
             .success(function (data) {
@@ -38,7 +38,7 @@ angular.module('userCtrl', ['userService'])
     var vm = this;
 
     // variable to hide/show elements of the view differentiate between create or edit pages
-    var type = 'craete';
+    vm.type = 'create';
 
     // functoin to create a user
     vm.saveUser = function () {

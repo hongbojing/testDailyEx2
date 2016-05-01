@@ -1,7 +1,3 @@
-// basic setup
-// =======
-
-// call the packages
 var express = require('express'); // call express
 var app = express();
 var bodyParser = require('body-parser'); // get body-parser
